@@ -2,7 +2,7 @@
   <md-list class="user-list">
     <md-toolbar class="md-transparent" md-elevation="0">
       <div class="user-list__header">
-        <span class="user-list__title">Users connected</span>
+        <span class="user-list__title">Connected Users</span>
         <span class="user-list__status">
           <md-icon @click.native="changeStatus()" v-bind:class="myStatus">fiber_manual_record</md-icon>
         </span>
@@ -103,14 +103,14 @@ export default {
   margin-right: 15px;
   cursor: pointer;
   &.md-primary {
-    color: #3961a5;
+    color: #00000021;
     font-size: 20px !important;
     margin-right: unset;
   }
 }
 .md-toolbar.md-theme-default.md-transparent {
   background: #486ca9;
-  color: white;
+  color: #00000021;
   font-size: 17px;
   position: sticky;
   top: 0px;

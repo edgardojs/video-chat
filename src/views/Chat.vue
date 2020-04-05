@@ -1,18 +1,5 @@
 <template>
-  <div class="page-container">
-    
-    <div class="md-layout-item">
-      <md-field>
-        <label for="room">Room</label>
-        <md-select v-model="room" @md-selected="onChangeRoom" name="room" id="room">
-          <md-option
-            v-for="room in this.$store.state.rooms"
-            :key="room.id"
-            :value="room.name"
-          >{{room.name}}</md-option>
-        </md-select>
-      </md-field>
-    </div>
+  <div class="page-container">    
 
     <md-app md-waterfall md-mode="fixed">
       <md-app-toolbar class="md-primary">
@@ -28,6 +15,18 @@
           :openPrivateChat="openPrivateChat.chat"
           @open-chat="openChat($event)"
         ></UserList>
+        <div class="md-layout-item">
+      <md-field>
+        <label for="room">Select Room</label>
+        <md-select v-model="room" @md-selected="onChangeRoom" name="room" id="room">
+          <md-option
+            v-for="room in this.$store.state.rooms"
+            :key="room.id"
+            :value="room.name"
+          >{{room.name}}</md-option>
+        </md-select>
+      </md-field>
+    </div>
       </md-app-drawer>
 
       <md-app-content id="chat-content">
@@ -241,31 +240,32 @@ export default {
     margin-bottom: 3rem;
 
     & label {
-      color: white;
+      color: #f8f8f8;
     }
 
     & .md-icon-image svg{
-      fill: white;
+      fill: #f8f8f8;
     }
 
     & .md-menu.md-select {
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid #cc000000;
     }
 
     &.md-theme-default.md-has-value .md-input {
-      -webkit-text-fill-color: white !important;
+      -webkit-text-fill-color: #cc000000 !important;
     }
     .md-menu.md-select .md-input {
-      -webkit-text-fill-color: white !important;
+      -webkit-text-fill-color: #cc000000 !important;
     }
   }
 
   .md-toolbar.md-theme-default {
     &.md-transparent {
       background: $secondary_blue;
-      color: white;
+      color: #FAFAFA;
       /* position: fixed; */
-      font-size: 17px;
+      font-size: 18px;
+      letter-spacing: 2px;
     }
 
     &.md-primary {
@@ -312,8 +312,6 @@ export default {
     }
   }
 
-  
-
   .md-app-toolbar {
     display: block;
   }
@@ -332,5 +330,3 @@ export default {
   }
 }
 </style>
-
-

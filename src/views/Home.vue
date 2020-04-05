@@ -1,10 +1,11 @@
 <template>
   <div class="options">
     <h2>VIDEO CHAT</h2>
+    <div>Sign In div</div>
     <div>
       <form novalidate class="md-layout" @submit.prevent="submitForm">
         <md-field>
-          <label>Username</label>
+          <label>User Name</label>
           <md-input 
             v-model="username" 
             type="string" 
@@ -47,7 +48,7 @@ export default {
       room: undefined,
       rooms: [],
       error: undefined,
-      defaultError: 'Something went wrong' 
+      defaultError: 'There is an error' 
     };
   },
   async created() {
