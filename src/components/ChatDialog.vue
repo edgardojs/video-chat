@@ -181,7 +181,7 @@ button {
   &__text {
     width: 100%;
     height: 60px;
-    border: 1px solid #8080804a;
+    border: 1px solid #f8f8f8;
   }
   &__title {
     text-align: center;

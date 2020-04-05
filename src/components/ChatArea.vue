@@ -83,14 +83,14 @@ export default {
   }
 
   .own {
-    background: #0080001f;
+    background: #f8f8f8;
     border: 1px solid #0080001f;
     margin: 0;
     float: right;
   }
 
   .other {
-    background: #d6ca002b;
+    background: #f8f8f8;
     border: 1px solid #d6ca002b;
     margin: 0;
     float: left;
