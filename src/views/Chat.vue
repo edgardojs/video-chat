@@ -240,11 +240,11 @@ export default {
     margin-bottom: 3rem;
 
     & label {
-      color: #f8f8f8;
+      color: #00000080;
     }
 
     & .md-icon-image svg{
-      fill: #f8f8f8;
+      fill: #000000bf;
     }
 
     & .md-menu.md-select {
@@ -262,7 +262,7 @@ export default {
   .md-toolbar.md-theme-default {
     &.md-transparent {
       background: $secondary_blue;
-      color: #FAFAFA;
+      color: #f8f8f8;
       /* position: fixed; */
       font-size: 18px;
       letter-spacing: 2px;

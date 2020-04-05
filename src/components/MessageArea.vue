@@ -57,8 +57,8 @@ export default {
   } 
 
   & .md-button.md-theme-default.md-primary {
-    background: #3961a5;
-    color: white;
+    background: #00000080;
+    color: #f8f8f8;
   }
 }
 </style>
